@@ -7,41 +7,446 @@
  
   <meta charset="utf-8">
 
-  <title>Client | Page Title</title>
+  <title>Journal</title>
   
   <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
   <meta name="description" lang="en" content="">
   
   <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
   <meta name="keywords" lang="en" content="">
-  
-  <!-- View-port Basics: http://mzl.la/VYREaP -->
-  <!-- This meta tag is used for mobile device to display the page without any zooming,
-       so how much the device is able to fit on the screen is what's shown initially. 
-       Remove comments from this tag, when you want to apply media queries to the website. -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-  
+
   <!-- To adhear no-cache for Chrome -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
   <meta http-equiv="Pragma" content="no-store, no-cache" />
   <meta http-equiv="Expires" content="0" />
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/dada321303.js" crossorigin="anonymous"></script>
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
 
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="css/style.css" >
-
-  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->	
-  <!--[if lt IE 9]>  
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
-  <![endif]-->
+  <link rel="stylesheet" media="screen" href="./assets/css/style.css" >
 
 </head>
 
 <body>
+  <!-- container start -->
+  <div class="container">
+    <!-- header start -->
+    <header>
+        <!-- navbar start -->
+        <nav class="navbar">
+            <a href="#FIXME" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#FIXME" title="HOME">home</a></li>
+                    <li><a href="#FIXME" title="NEWS">news</a></li>
+                    <li><a href="#FIXME" title="CATEGORIES">categories</a></li>
+                    <li><a href="#FIXME" title="ARTICLES">articles</a></li>
+                </ul>
+            </div>
+            <div class="brand-title">Journal</div>
+            <div class="navbar-links2">
+                <ul>
+                    <li><a href="#FIXME" title="ABOUT">about</a></li>
+                    <li><a href="#FIXME" title="CONTACT">contact</a></li>
+                    <li><a href="#FIXME" title="SUBSCRIBE">subscribe</a></li>
+                    <li><a href="#FIXME" title="PURCHASE">purchase</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar ends -->
+    </header>
+    <!-- header ends -->
+
+    <!-- main section start -->
+    <main>
+        <!-- banner start -->
+    <section class="banner">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <div class="slide-data">
+                        <figure><img src="./img-j/travel.jpg" alt="entertainment"></figure>
+                        <div class="content">
+                            <h2>Best things to do while travelling</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Etiam euismod, purus quis tempor ullamcorper, nisi
+                                sapien bibendum erat, ac commodo diam elit.
+                            </p>
+                            <a href="#FIXME" class="readbtn" title="Read More">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-data">
+                        <figure><img src="./img-j/tech.jpg" alt="entertainment"></figure>
+                        <div class="content">
+                            <h2>Best things to do while travelling</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Etiam euismod, purus quis tempor ullamcorper, nisi
+                                sapien bibendum erat, ac commodo diam elit.
+                            </p>
+                            <a href="#FIXME" class="readbtn" title="Read More">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-data">
+                        <figure><img src="./img-j/entertainment.jpg" alt="entertainment"></figure>
+                        <div class="content">
+                            <h2>Best things to do while travelling</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Etiam euismod, purus quis tempor ullamcorper, nisi
+                                sapien bibendum erat, ac commodo diam elit.
+                            </p>
+                            <a href="#FIXME" class="readbtn" title="Read More">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow prev prev1 icon" onclick="plusslide(-1)"></button>
+            <button class="arrow next next1 icon" onclick="plusslide(1)"></button>
+    
+            <div class="dots">
+                <span onclick="currentslide(1)"></span>
+                <span onclick="currentslide(2)"></span>
+                <span onclick="currentslide(3)"></span>
+    
+            </div>
+        </div>
+
+    </section>
+    <!-- banner ends -->
+
+    <!-- latest post section start -->
+     <section class="post">
+        <h2>latest post</h2>
+        <ul class="post1">
+            <li>
+                <figure>
+                    <img src="./img-j/entertainment.jpg" alt="post-img">
+                </figure>
+                <h3>Technology is taking over the world</h3>
+                <p>Lorem ipsum dolor sit amet, consec-tetur adipiscing elit. Vestibulum plac-erat
+                    enim vel est elementm, rutrum tincidunt magna posuere Phasellus lobortis risus magna...
+                </p>
+                <ul class="btn-list">
+                    <li><a href="#FIXME" title="LIKE" class="like icon"></a></li>
+                    <li><a href="#FIXME" title="MESSAGE" class="icon mes"></a></li>
+                    <li><a href="#FIXME" title="NEXT" class="icon arw"></a></li>
+
+                </ul>
+            </li>
+            <li>
+                <figure>
+                    <img src="./img-j/entertainment.jpg" alt="post-img">
+                </figure>
+                <h3>10 best buisness tips for beginners</h3>
+                <p>Lorem ipsum dolor sit amet, consec-
+                    tetur adipiscing elit. Vestibulum plac-
+                    erat enim...
+                </p>
+                <ul class="btn-list">
+                    <li><a href="#FIXME" title="LIKE" class="like icon"></a></li>
+                    <li><a href="#FIXME" title="MESSAGE" class="icon mes"></a></li>
+                    <li><a href="#FIXME" title="NEXT" class="icon arw"></a></li>
+
+                </ul>
+            </li>
+            <li>
+                <figure>
+                    <img src="./img-j/entertainment.jpg" alt="post-img">
+                </figure>
+                <h3>Best thing to do while travelling abroad</h3>
+                <p>Lorem ipsum dolor sit amet, consec-
+                    tetur adipiscing elit. Vestibulum plac-
+                    erat enim vel est elementum, rutrum
+                    tincidunt magna posuere...
+                </p>
+                <ul class="btn-list">
+                    <li><a href="#FIXME" title="LIKE" class="like icon"></a></li>
+                    <li><a href="#FIXME" title="MESSAGE" class="icon mes"></a></li>
+                    <li><a href="#FIXME" title="NEXT" class="icon arw"></a></li>
+
+                </ul>
+            </li>
+            <li>
+                <figure>
+                    <img src="./img-j/entertainment.jpg" alt="post-img">
+                </figure>
+                <h3>Ups and downs in the entertainment industry</h3>
+                <p>Lorem ipsum dolor sit amet, consec-
+                    tetur adipiscing elit. Vestibulum plac-
+                    erat enim vel est elementum, rutrum
+                    tincidunt magna posuere...
+                </p>
+                <ul class="btn-list">
+                    <li><a href="#FIXME" title="LIKE" class="like icon"></a></li>
+                    <li><a href="#FIXME" title="MESSAGE" class="icon mes"></a></li>
+                    <li><a href="#FIXME" title="NEXT" class="icon arw"></a></li>
+
+                </ul>
+            </li>
+
+        </ul>
+        <ul class="post2">
+            <li>
+                <figure>
+                    <img src="./img-j/entertainment.jpg" alt="post-img">
+                </figure>
+                <h3>Technology is taking over the world</h3>
+                <p>Lorem ipsum dolor sit amet, consec-
+                    tetur adipiscing elit. Vestibulum plac-
+                    erat enim vel est elementum....
+                </p>
+                <ul class="btn-list">
+                    <li><a href="#FIXME" title="LIKE" class="like icon"></a></li>
+                    <li><a href="#FIXME" title="MESSAGE" class="icon mes"></a></li>
+                    <li><a href="#FIXME" title="NEXT" class="icon arw"></a></li>
+
+                </ul>
+            </li>
+            <li>
+                <figure>
+                    <img src="./img-j/entertainment.jpg" alt="post-img">
+                </figure>
+                <h3>10 best buisness tips for beginners</h3>
+                <p>Lorem ipsum dolor sit amet, consec-
+                    tetur adipiscing elit. Vestibulum plac-
+                    erat enim vel est elementum, rutrum
+                    tincidunt magna posuere...
+                </p>
+                <ul class="btn-list">
+                    <li><a href="#FIXME" title="LIKE" class="like icon"></a></li>
+                    <li><a href="#FIXME" title="MESSAGE" class="icon mes"></a></li>
+                    <li><a href="#FIXME" title="NEXT" class="icon arw"></a></li>
+
+                </ul>
+            </li>
+            <li>
+                <figure>
+                    <img src="./img-j/entertainment.jpg" alt="post-img">
+                </figure>
+                <h3>Best thing to do while travelling abroad</h3>
+                <p>Lorem ipsum dolor sit amet, consec-
+                    tetur adipiscing elit. Vestibulum plac-
+                    erat enim vel est elementum, rutrum
+                    tincidunt magna posuere...
+                </p>
+                <ul class="btn-list">
+                    <li><a href="#FIXME" title="LIKE" class="like icon"></a></li>
+                    <li><a href="#FIXME" title="MESSAGE" class="icon mes"></a></li>
+                    <li><a href="#FIXME" title="NEXT" class="icon arw"></a></li>
+
+                </ul>
+            </li>
+            <li>
+                <figure>
+                    <img src="./img-j/entertainment.jpg" alt="post-img">
+                </figure>
+                <h3>Ups and downs in the entertainment industry</h3>
+                <p>Lorem ipsum dolor sit amet, consec-
+                    tetur adipiscing elit. Vestibulum plac-
+                    erat enim vel est elementum, rutrum
+                    tincidunt magna posuere...
+                </p>
+                <ul class="btn-list">
+                    <li><a href="#FIXME" title="LIKE" class="like icon"></a></li>
+                    <li><a href="#FIXME" title="MESSAGE" class="icon mes"></a></li>
+                    <li><a href="#FIXME" title="NEXT" class="icon arw"></a></li>
+
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+    <!-- latest post section ends -->
+     <!-- categories section start -->
+     <section class="category">
+        <div class="wrapper">
+            <h2>categories</h2>
+            <ul class="category-img">
+                <li><figure><img src="./img-j/travel.jpg" alt="travel"></figure></li>
+                <li><figure><img src="./img-j/tech.jpg" alt="tech"></figure></li>
+                <li><figure><img src="./img-j/entertainment.jpg" alt="entertainment"></figure></li>
+            </ul>
+        </div>
+    </section>
+    <!-- categories sectiom ends -->
+
+    <!-- articles section -->
+    <section class="article">
+        <div class="wrapper">
+            <div class="popular-posts">
+                <h2>popular posts</h2>
+                <ul class="popular-list">
+                    <li>
+                        <p>Integer consequat leo et purus dignissim biben-
+                        dum Proin eget est mattis.</p>
+                        <span>August 21 2015</span>
+                    </li>
+                    <li>
+                        <p>Integer consequat leo et purus dignissim biben-
+                            dum Proin eget est mattis.</p>
+                        <span>August 21 2015</span>
+                    </li>
+                    <li>
+                        <p>Integer consequat leo et purus dignissim biben-
+                        dum Proin eget est mattis.</p>
+                        <span>August 21 2015</span>
+                    </li>
+                    <li>
+                        <p>Integer consequat leo et purus dignissim biben-
+                        dum Proin eget est mattis.</p>
+                        <span>August 21 2015</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="new-articles">
+                <h2>new articles</h2>
+                <ul class="new-list">
+                    <li>
+                        <p>Integer consequat leo et purus dignissim biben-
+                        dum Proin eget est mattis.</p>
+                        <span>August 21 2015</span>
+                    </li>
+                    <li>
+                        <p>Integer consequat leo et purus dignissim biben-
+                            dum Proin eget est mattis.</p>
+                        <span>August 21 2015</span>
+                    </li>
+                    <li>
+                        <p>Integer consequat leo et purus dignissim biben-
+                        dum Proin eget est mattis.</p>
+                        <span>August 21 2015</span>
+                    </li>
+                    <li>
+                        <p>Integer consequat leo et purus dignissim biben-
+                        dum Proin eget est mattis.</p>
+                        <span>August 21 2015</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="most-commented">
+                <h2>most commented posts</h2>
+                <ul class="most-list">
+                    <li>
+                        <p>Integer consequat leo et purus dignissim biben-
+                        dum Proin eget est mattis.</p>
+                        <span>August 21 2015</span>
+                    </li>
+                    <li>
+                        <p>Integer consequat leo et purus dignissim biben-
+                            dum Proin eget est mattis.</p>
+                        <span>August 21 2015</span>
+                    </li>
+                    <li>
+                        <p>Integer consequat leo et purus dignissim biben-
+                        dum Proin eget est mattis.</p>
+                        <span>August 21 2015</span>
+                    </li>
+                    <li>
+                        <p>Integer consequat leo et purus dignissim biben-
+                        dum Proin eget est mattis.</p>
+                        <span>August 21 2015</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- article section ends -->
+
+    <!-- form section start -->
+    <section class="subscribe">
+        <div class="wrapper">
+            <h2>subscribe and stay in touch</h2>
+            <form action="#FIXME">
+                <input type="email" placeholder="please enter your email">
+                <button>subscribe now</button>
+            </form>
+        </div>
+    </section>
+    <!-- form section ends -->
+    </main>
+    <!-- main section ends -->
+
+    <!-- footer section start -->
+
+    <footer>
+        <footer>
+            <div class="wrapper">
+                <ul class="footer-content">
+                    <li>
+                        <h2 class="logo">journal</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            In ac nunc venenatis, facilisis urna at, imperdiet justo.
+                            Morbi pharetra, elit eu interdum placerat.
+                        </p>
+                        <address class="icon loc">
+                            Address: 121 First Street,<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Anytown, CA 1244 USA.
+                        </address>
+                        <a href="tel:(800)-0456-4567-890" class="tel phone icon">(800) 0456 4567 890</a>
+                        <a href="mailto:info@journalblog.com" class="mail gmail icon">info@journalblog.com</a>
+                        <ul class="social-media">
+                            <li><a href="#FIXME" title="facebook" class="fb icon"></a></li>
+                            <li><a href="#FIXME" title="google plus" class="gp icon"></a></li>
+                            <li><a href="#FIXME" title="linkedin" class="icon in"></a></li>
+                            <li><a href="#FIXME" title="pinterest" class="icon pi"></a></li>
+                            <li><a href="#FIXME" title="twitter" class="icon tw"></a></li>
+                            <li><a href="#FIXME" title="gmail" class="icon gm"></a></li>
+                        </ul>
+                    </li>
+                    <li class="recent">
+                        <h2>recent posts</h2>
+                        <p>Integer consequat leo et purus dignissim
+                            bibendum Proin eget est mattis.
+                        </p>
+                        <span>August 21 2015</span>
+                        <p>Integer consequat leo et purus dignissim
+                            bibendum Proin eget est mattis.
+                        </p>
+                        <span>August 21 2015</span>
+                        <p>Integer consequat leo et purus dignissim
+                            bibendum Proin eget est mattis.
+                        </p>
+                        <span>August 21 2015</span>
+                    </li>
+                    <li>
+                        <h2>instagram</h2>
+                        <ul class="gallery">
+                            <li><img src="./img-j/travel.jpg" alt="one"></li>
+                            <li><img src="./img-j/travel.jpg" alt="two"></li>
+                            <li><img src="./img-j/travel.jpg" alt="three"></li>
+                            <li><img src="./img-j/travel.jpg" alt="four"></li>
+                            <li><img src="./img-j/travel.jpg" alt="five"></li>
+                            <li><img src="./img-j/travel.jpg" alt="six"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="up-btn">
+                    <a href="#FIXME" title="Up" class="ch-up icon"></a>
+                </div>
+                <ul class="copyright">
+                    <li><span>&copy; 2015 <a href="#FIXME" title="JOURNALBLOG.COM">journalblog.com</a></span></li>
+                    <li><span>privacy policy | terms & conditions</span></li>
+
+                </ul>
+            </div>
+        </footer>
+    </footer>
+</div>
+
 
 <script src="js/vendors/jquery-1.8.3.min.js"></script>
-<script src="js/script.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
