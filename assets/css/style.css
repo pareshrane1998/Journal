@@ -330,13 +330,13 @@ a { text-decoration: none;}
 }
 
 .slide:nth-child(1) { 
-  background-image: url(../img-j/travel.jpg);
+  background-image: url("/img-j/travel.jpg");
 }
 .slide:nth-child(2) { 
-  background-image: url(../img-j/tech.jpg);
+  background-image: url("/img-j/tech.jpg");
 }
 .slide:nth-child(3) { 
-  background-image: url(../img-j/entertainment.jpg);
+  background-image: url("/img-j/entertainment.jpg");
 }
 
 
